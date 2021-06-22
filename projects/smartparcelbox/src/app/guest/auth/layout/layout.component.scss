@@ -1,0 +1,16 @@
+.layout-btn-size button{
+  line-height: 50px !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .card-mobile-height {
+    min-width: 100vh;
+    min-height: 100vh;
+  }
+}
+.body-bg{
+  background-color: #f0f7f7;
+}
+.layout-section{
+  box-shadow: 0px 5px 15px 2px rgba(82, 63, 104, 0.06), 0px 1px 1px 0px rgba(82, 63, 104, 0.042), 0px 1px 3px 0px rgba(82, 63, 104, 0.036) !important;
+}

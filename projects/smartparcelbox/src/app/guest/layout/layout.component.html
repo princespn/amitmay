@@ -1,0 +1,13 @@
+<ng-template #contentRef>
+    <div class="container-fluid bg-white">
+        <div fxLayout="column"  style="min-height: 60vh">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</ng-template>
+
+<ng-template #footerRef>
+  <spb-guest-footer></spb-guest-footer>
+</ng-template>
+
+<vex-custom-layout [contentRef]="contentRef" [footerRef]="footerRef"></vex-custom-layout>

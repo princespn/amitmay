@@ -1,0 +1,269 @@
+@import "~simplebar/dist/simplebar.css";
+@import "~highlight.js/styles/androidstudio.css";
+// Vex Core
+@import "@vex/styles/core";
+//@import "./embryo/styles/utilities/utilities";
+@import "./styles/loading_button";
+@import "~@ng-select/ng-select/themes/material.theme.css";
+//@import "~@ng-select/ng-select/themes/default.theme.css";
+@import '~quill/dist/quill.core.css';
+@import '~quill/dist/quill.bubble.css';
+@import '~quill/dist/quill.snow.css';
+@import '~ngx-bar-rating/themes/br-default-theme';
+@import '~ngx-sharebuttons/themes/circles/circles-dark-theme';
+
+.ngx-gallery {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.ngx-gallery-thumbnails .ngx-gallery-thumbnail {
+  border: none !important;
+}
+
+.ng-select {
+  &.ng-select-focused {
+    .ng-select-container {
+      &:after {
+        border-width: 0px;
+      }
+    }
+  }
+}
+
+
+.mat-card {
+  border-radius: 6px !important;
+}
+
+/*
+  You can override any CSS Variable or style here
+  Example:
+  :root {
+   --sidenav-background: #333333;
+  }
+  All possible variables can be found in @vex/styles/core or by simply inspecting the element you want to change
+  in Chrome/Firefox DevTools
+*/
+
+/**
+  Uncomment the below code and adjust the values to fit your colors, the application will automatically adjust
+ */
+:root {
+  // --color-primary: blue;
+  // --color-primary-contrast: white;
+
+  // --color-accent: yellow;
+  // --color-accent-contrast: black;
+
+  // --color-warn: yellow;
+  // --color-warn-contrast: black;
+
+
+
+}
+
+
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 639px;
+
+html {
+  overflow: auto;
+}
+
+body, p, a, mat-chip.mat-chip.mat-focus-indicator.mat-primary.mat-standard-chip {
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0;
+  line-height: 28px;
+  --font: 'Montserrat', sans-serif !important;
+}
+.mat-raised-button{
+  font-family: inherit;
+}
+
+::before, ::after {
+  border-color: #212121;
+}
+
+$accent: #fff;
+$text-color: #656566;
+$heading-color: #444;
+$border: 1px solid #E5E5E5;
+$cyan-hover: #008494;
+$white: #ffffff;
+
+h1, h2, h3, h4, h5, h6 {
+  color: $heading-color;
+  line-height: 1.8rem;
+}
+
+@media (max-width: $breakpoint-mobile) {
+  h1, h2, h3{
+    line-height: 2.8rem;
+  }
+  .mat-card{
+    padding: 8px !important;
+  }
+  .cdk-overlay-pane{
+    max-width: 100% !important;
+    width: auto !important;
+    min-width: 360px;
+  }
+  p{
+    line-height: 22px;
+  }
+}
+@media (max-width: 359px) {
+  .cdk-overlay-pane{
+    min-width: 320px;
+  }
+}
+
+
+.qty .mat-form-field-wrapper{
+  padding-bottom: 0;
+}
+.qty .mat-form-field-infix{
+  padding: 8px 0 !important;
+}
+
+
+.br-50{
+  border-radius: 50px;
+}
+
+
+.mat-card {
+  color: $text-color;
+}
+
+mat-chip {
+  border-radius: 5px !important;
+}
+
+.brand-tablet-price div {
+  padding: 8px 0;
+  text-align: center;
+  margin: 0 5px 0 0;
+}
+
+
+.red-icon {
+  color: rgb(var(--color-primary));
+}
+
+//.mat-form-field-appearance-fill .mat-form-field-flex {
+//  background: #fff;
+//}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px $white inset !important;
+}
+
+.mat-checkbox-label {
+  white-space: normal;
+}
+
+
+
+.full-width-dialog .mat-dialog-container {
+  max-width: 100vw !important;
+}
+
+.full-width-dialog .mat-dialog-content {
+  max-height: 100vw !important;
+}
+.mat-dialog-content, .mat-dialog-container{
+  overflow: visible !important;
+}
+
+.chip-box {
+  height: auto;
+}
+
+body {
+  position: relative !important;
+  overflow: auto !important;
+}
+
+.bg-pattern{
+  background-image: url("assets/images/img/bg-img.webp") !important;
+  background-size: auto;
+}
+
+.checkbox {
+  .mat-form-field-appearance-standard .mat-form-field-flex {
+    padding-top:0 !important;
+  }
+  .mat-form-field-infix {
+    padding: 0;
+    border-top: none;
+  }
+  .mat-checkbox-layout {
+    display: inline-block;
+  }
+}
+// Social
+$color-facebook: #3b5998;
+$color-twitter: #00aced;
+$color-instagram: #cd486b;
+
+.bg-facebook {
+  background: $color-facebook;
+  color: white;
+}
+
+.bg-twitter {
+  background: $color-twitter;
+  color: white;
+}
+
+.bg-instagram {
+  background: $color-instagram;
+  color: white;
+}
+
+
+//stepper
+.mat-horizontal-content-container{
+  overflow: visible !important;
+  padding: 0 !important;
+}
+.mat-stepper-horizontal{
+  .mat-horizontal-stepper-header{
+    height: 40px;
+    padding: 0;
+  }
+  td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type {
+    padding-left: 12px;
+    display: table-cell !important;
+  }
+  th.mat-header-cell:first-of-type{
+    padding-left: 12px;
+  }
+}
+.mat-dialog-container{
+  margin: auto;
+  min-width: 32rem;
+}
+
+.mat-menu-panel{
+  position: absolute;
+  right: 0;
+  min-height: auto !important;
+}
+@media (max-width: $breakpoint-mobile) {
+  h4, h5, h6{
+    line-height: 1.4rem;
+  }
+  .mat-dialog-container{
+    min-width: 320px;
+  }
+}
+.mat-step-header.cdk-keyboard-focused, .mat-step-header.cdk-program-focused, .mat-step-header:hover{
+  background: none;
+}
